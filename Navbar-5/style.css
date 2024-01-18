@@ -1,0 +1,167 @@
+/* common code start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* common code end */
+/* container code start */
+#container {
+  background-image: url(cover.jpg);
+  background-size: cover;
+  background-position: left left;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+/* nav code start */
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-aside a {
+  font-size: 2rem;
+  color: #ff7103;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin-right: 10px;
+}
+nav ul li a {
+  font-size: 1.8rem;
+  color: black;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+.nav-article {
+  border-radius: 5px;
+}
+.nav-article #search {
+  width: 300px;
+  text-align: center;
+  padding: 5px;
+  font-size: 1.3rem;
+}
+.nav-article button {
+  font-size: 1.6rem;
+  padding: 2px;
+  margin-left: -5px;
+  background-color: #f57603;
+  border: none;
+  padding-bottom: 4px;
+}
+/* nav code end */
+/* baner section start */
+.baner-section {
+  display: flex;
+  margin-top: 200px;
+}
+/* baner aside start */
+.baner-aside {
+  flex: 0.5;
+}
+.baner-aside span {
+  color: #e77620;
+}
+.baner-aside p {
+  margin: 5px;
+  font-size: 1.5em;
+}
+.baner-aside button {
+  width: 200px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff7103;
+}
+/* baner aside end */
+/* baner article start */
+.baner-article {
+  flex: 0.5;
+}
+.login {
+  width: 300px;
+  height: 35vh;
+  box-shadow: 0.2rem 0.4rem 0.9rem #d9b4bf;
+  margin: auto;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.login h1 {
+  color: #f57603;
+  margin-bottom: 10px;
+}
+.login-item input {
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 15px;
+  text-indent: 5px;
+}
+.login-text {
+  text-align: center;
+}
+.login-text a {
+  color: gray;
+}
+.login-text span {
+  color: #b06d56;
+  font-weight: bolder;
+}
+.login-btn {
+  width: 200px;
+  font-size: 1.2rem;
+  background-color: #e77620;
+  border: none;
+  border-radius: 5px;
+}
+.login-icon {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.login-icon i {
+  font-size: 1.2rem;
+  color: gray;
+}
+/* baner article end */
+/* baner section end */
+/* container code end */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  /* nav code start */
+  #container {
+    background-position: center center;
+    height: 130vh;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    display: block;
+  }
+  /* nav code end */
+  /* baner section start */
+  .baner-section {
+    flex-direction: column;
+  }
+  .baner-aside button {
+    margin-bottom: 40px;
+  }
+  /* baner section end */
+}
