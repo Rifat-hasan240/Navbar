@@ -1,0 +1,107 @@
+/* common code start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+  outline: 0;
+}
+#container {
+  width: 1000px;
+  height: 10vh;
+  margin: auto;
+  background-color: #4a99f8;
+}
+/* common code end */
+/* nav code start */
+nav {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-around;
+  color: white;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  margin-left: 15px;
+  line-height: 40px;
+}
+nav i {
+  margin-top: 10px;
+}
+nav a {
+  color: white;
+  font-size: 1.3rem;
+}
+/* sub code start */
+.sub {
+  display: none;
+  border-radius: 10px;
+}
+nav ul li:hover .sub {
+  display: block;
+  background-color: whitesmoke;
+  color: black;
+  position: absolute;
+}
+.sub ul {
+  display: block;
+  padding: 10px;
+}
+.sub a {
+  color: black;
+}
+.sub a:hover {
+  text-decoration: underline;
+}
+/* sub code end */
+/* sub first code start */
+.sub-first {
+  display: none;
+}
+.hover-me-first:hover .sub-first {
+  display: block;
+  margin-left: 155px;
+  background-color: #4a99f8;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: -10px;
+}
+.sub-first a {
+  color: white;
+}
+/* sub first code end */
+/* nav code end */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  #container {
+    width: 100%;
+    height: 50vh;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  nav ul {
+    display: block;
+  }
+  nav i {
+    visibility: hidden;
+  }
+  .sub {
+    margin-left: -180px;
+    margin-top: -20px;
+  }
+  .sub ul {
+    padding: 0;
+  }
+  .hover-me-first:hover .sub-first{
+    background-color: black;
+  }
+}
